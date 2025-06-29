@@ -10,8 +10,8 @@ double circleLength(Circle c) { return 2 * M_PI * c.radius; }
 bool isPointInside(Circle c, Point p) {
     double dx = p.x - c.center.x;
     double dy = p.y - c.center.y;
-    double dist_squared = dx * dx + dy * dy;
+    double d_squared = dx * dx + dy * dy;
     double radius_squared = c.radius * c.radius;
 
-    return dist_squared <= radius_squared;
+    return d_squared <= radius_squared;
 }
